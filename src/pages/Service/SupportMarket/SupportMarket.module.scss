@@ -1,0 +1,36 @@
+.wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .start{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-color: #7d2670;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .startIMG{
+            width: 110px;
+            height: 110px;
+        }
+
+        .startP{
+            font-size: 60px;
+            color: white;
+            font-weight: 350;
+            height: 180px;
+            margin: 0;
+        }
+        .startLineImg{
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    }   
+}   
