@@ -1,0 +1,74 @@
+
+
+.main_cont {
+  width: 100%;
+  height: auto;
+  background-color: violet;
+
+  position: relative;
+
+  .card_cont {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    > .line_cont {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20px;
+      height: 100vh;
+
+      > .cont {
+        position: relative;
+        width: 20px;
+        height: 100%;
+        background-color: red;
+
+        > .line {
+          width: 2px;
+          background-color: black;
+          height: 100%;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        > .circle {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          background-color: green;
+          position: absolute;
+          top: 0;
+          left: -70px;
+          z-index: 999;
+        }
+      }
+    }
+
+    > .card_list {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+
+      li:nth-child(even) {
+        margin-left: 600px;
+      }
+
+      li {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: 1px solid white;
+        background-color: aliceblue;
+      }
+    }
+  }
+}
+

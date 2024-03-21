@@ -1,0 +1,114 @@
+.Price {
+  width: 100%;
+  background-color: white;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+
+
+  > .first_box {
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+
+    > h2 {
+      color: #7d2670;
+      font-size: 42px;
+      line-height: 1.2;
+      font-weight: 400;
+      font-family: "Montserrat";
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+
+  > .second_box {
+    width: 80%;
+    margin: 0 auto 100px !important ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    .inner_title{
+      font-size: 40px;
+      font-weight: 400 !important;
+    }
+
+
+
+
+    >.text_center{
+      width: 800px;
+      margin: 20px auto;
+      text-align: center;
+      font-weight: 300;
+      color: #140d0d;
+
+    }
+
+    
+
+    > h3 {
+      width: 860px;
+      text-align: center;
+      font-size: 30px;
+      line-height: 1.2;
+
+      color: rgb(20, 13, 13);
+      font-weight: 400;
+      margin: 0 0 20px 0;
+    }
+
+    > .inner_second_box {
+      width: 860px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .first {
+        background: #7d2670 !important;
+        width: 100%;
+
+        h6 {
+          color: white !important;
+          font-size: 18px !important;
+          font-weight: 400 !important;
+        }
+      }
+
+      .price_table {
+        padding: 20px 30px;
+        background-color: white;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        &:nth-child(2n + 1) {
+          background-color: #dedede;
+        }
+
+        > h6 {
+          border-width: 0px;
+          vertical-align: top;
+          color: #140d0d;
+          font-size: 16px;
+          line-height: 1.4;
+          font-weight: 300;
+        }
+
+        .right {
+          color: black;
+        }
+
+        .left {
+          width: 170px;
+          color: black;
+        }
+      }
+    }
+  }
+}
