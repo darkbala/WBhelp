@@ -1,0 +1,60 @@
+.Nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(161, 48, 161);
+  .main_links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px 0;
+
+    list-style-type: none;
+
+    li {
+      position: relative;
+
+      a {
+        color: white;
+        text-decoration: none; /* Убираем подчеркивание у ссылок */
+        display: inline-block; /* Превращаем ссылку в блочный элемент */
+        padding: 10px; /* Добавляем отступы вокруг текста ссылки */
+      }
+
+      .dropdown_menu {
+        display: none;
+        position: absolute;
+        top: calc(100% + 33px); /* Позиционируем меню под ссылкой */
+        left: 0;
+        background-color: white;
+        width: 200px;
+
+        ol {
+          list-style: none;
+          padding: 0; /* Убираем внешние отступы у списка */
+          margin: 0; /* Убираем внутренние отступы у списка */
+
+          li {
+            a {
+              color: red;
+              display: block; /* Превращаем ссылку в блочный элемент */
+              padding: 10px; /* Добавляем отступы вокруг текста ссылки */
+              text-decoration: none; /* Убираем подчеркивание у ссылок */
+            }
+          }
+        }
+      }
+
+      &:hover .dropdown_menu {
+        display: block;
+      }
+    }
+  }
+}
