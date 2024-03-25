@@ -14,7 +14,7 @@ const FAQ = () => {
 
       <section className={cl.head}>
         <div className={cl.left}>
-          <h3>FAG</h3>
+          <h3>FAQ</h3>
           <p>
             ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ ПО РАБОТЕ <br />С МАРКЕТПЛЕЙСАМИ{" "}
           </p>
