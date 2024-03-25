@@ -4,16 +4,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #7d2670;
 
     .start{
         position: relative;
         width: 100%;
         height: 100vh;
-        background-color: #7d2670;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 15px;
 
         .startIMG{
             width: 110px;
@@ -21,11 +22,17 @@
         }
 
         .startP{
-            font-size: 60px;
-            color: white;
-            font-weight: 350;
-            height: 180px;
-            margin: 0;
+            color: #ffffff;
+            font-size: 58px;
+            font-family: 'Montserrat', Arial, sans-serif;
+            line-height: 1.1;
+            font-weight: 300;
+            letter-spacing: 0.4px;
+            text-transform: uppercase;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+            text-align: center;
         }
         .startLineImg{
             position: absolute;
@@ -33,4 +40,98 @@
             bottom: 0;
         }
     }   
+    .descrip{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding:120px 0px 260px 20%;
+
+        .desc1{
+            display: flex;
+            width: 85%;
+            gap: 40px;
+            align-items: center;
+
+            .desc1p{
+                color: #ffffff;
+                font-size: 18px;
+                font-family: 'Montserrat', Arial, sans-serif;
+                line-height: 1.4;
+                font-weight: 300;
+                background-position: center center;
+                border-color: transparent;
+                border-style: solid;
+            }
+            .desc1img{
+                width: 340px;
+                height: 280px;
+            }
+        }
+        .desc2{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin: 30px 0px;
+
+            .desc2top{
+                display: flex;
+                gap: 50px;
+
+                .desc2top1{
+                    height: 100%;
+                    display: flex;
+                    gap: 15px;
+                    
+                    .desc2img{
+                        width: 75px;
+                        height: 75px;
+                    }
+                    .desc2p{
+                        width: 250px;
+                        color: #ffffff;
+                        font-size: 18px;
+                        font-family: 'Montserrat', Arial, sans-serif;
+                        line-height: 1.4;
+                        font-weight: 300;
+                        
+                    }
+                }
+                .desc2top2{
+                    display: flex;
+                    gap: 15px;
+                    
+                    .desc2img{
+                        width: 75px;
+                        height: 75px;
+                    }
+                    .desc2p{
+                        width: 500px;
+                        color: #ffffff;
+                        font-size: 18px;
+                        font-family: 'Montserrat', Arial, sans-serif;
+                        line-height: 1.4;
+                        font-weight: 300;
+                       
+                    }
+                }
+            }
+        }
+        .desc3{
+            width: 600px;
+            color: #ffffff;
+            font-size: 18px;
+            font-family: 'Montserrat', Arial, sans-serif;
+            line-height: 1.4;
+            font-weight: 300;
+        }
+        .startLineImg{
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+    }
 }   
