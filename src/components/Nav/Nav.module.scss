@@ -1,60 +1,204 @@
-.Nav {
+.main_cont {
+  display: flex;
+  flex-direction: column;
   position: sticky;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(161, 48, 161);
-  .main_links {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
-    padding: 15px 0;
 
-    list-style-type: none;
+  .top_nav {
+    width: 100%;
+    height: 60px;
+    background-color: #b13dc5;
 
-    li {
-      position: relative;
+    > ul {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
 
-      a {
+      gap: 100px;
+      width: 70%;
+      height: 100%;
+      margin: 0 auto;
+      padding: 15px 0;
+
+      li {
         color: white;
-        text-decoration: none; /* Убираем подчеркивание у ссылок */
-        display: inline-block; /* Превращаем ссылку в блочный элемент */
-        padding: 10px; /* Добавляем отступы вокруг текста ссылки */
-      }
 
-      .dropdown_menu {
-        display: none;
-        position: absolute;
-        top: calc(100% + 33px); /* Позиционируем меню под ссылкой */
-        left: 0;
-        background-color: white;
-        width: 200px;
+        > p {
+          font-size: 13px !important;
+          margin-bottom: 4px;
+        }
 
-        ol {
-          list-style: none;
-          padding: 0; /* Убираем внешние отступы у списка */
-          margin: 0; /* Убираем внутренние отступы у списка */
+        a {
+          h3 {
+            font-size: 30px;
+            color: white;
+            font-weight: 300;
+            letter-spacing: 1px;
 
-          li {
-            a {
-              color: red;
-              display: block; /* Превращаем ссылку в блочный элемент */
-              padding: 10px; /* Добавляем отступы вокруг текста ссылки */
-              text-decoration: none; /* Убираем подчеркивание у ссылок */
+            &:hover {
+              color: rgba(255, 255, 255, 0.74);
             }
           }
         }
       }
 
-      &:hover .dropdown_menu {
-        display: block;
+      .icon {
+        display: flex;
+        align-items: center;
+        gap: 30px;
       }
     }
   }
 }
+
+
+.Nav {
+  width: 100%;
+  height: 60px;
+
+  background-color: rgb(161, 48, 161);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .inner_nav {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 30px;
+
+    .book {
+      width: 200px;
+      padding: 10px 20px;
+      margin-top: -62px;
+      border: 1px solid white;
+      background-color: white;
+      border-radius: 10px;
+      color: #7d2670;
+      font-size: 14px;
+    }
+
+    .main_links {
+      display: flex;
+      align-items: center;
+      gap: 70px;
+      list-style-type: none;
+
+      > li {
+        a {
+          color: white;
+          text-transform: capitalize;
+        }
+
+        .service {
+          color: white;
+
+          a:hover {
+            cursor: pointer;
+          }
+        }
+      }
+
+    }
+  }
+
+}
+
+.dropdown_menu {
+  position: absolute;
+  top: 100%;
+  left: 13%;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  list-style-type: none;
+  padding: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  > ol {
+    background-color: blueviolet;
+    width: 300px;
+    padding: 10px;
+    height: 400px;
+    list-style-type: none;
+
+    li {
+      padding: 10px;
+    }
+
+
+  }
+}
+
+.show {
+  opacity: 1 !important;
+}
+
+
+//
+//.Nav {
+//
+//  display: flex;
+//  align-items: center;
+//  justify-content: center;
+//
+//  .main_links {
+//    display: flex;
+//    align-items: center;
+//    justify-content: flex-start;
+//    gap: 60px;
+//    width: 60%;
+//    margin: 0 auto;
+//    padding: 15px 0;
+//    list-style-type: none;
+//
+//    li {
+//      position: relative;
+//
+//      a {
+//        color: white;
+//        text-decoration: none; /* Убираем подчеркивание у ссылок */
+//        display: inline-block; /* Превращаем ссылку в блочный элемент */
+//        padding: 10px; /* Добавляем отступы вокруг текста ссылки */
+//      }
+//
+//      .dropdown_menu {
+//        display: none;
+//        position: absolute;
+//        top: calc(100% + 33px); /* Позиционируем меню под ссылкой */
+//        left: 0;
+//        background-color: white;
+//        width: 200px;
+//
+//        ol {
+//          list-style: none;
+//          padding: 0; /* Убираем внешние отступы у списка */
+//          margin: 0; /* Убираем внутренние отступы у списка */
+//
+//          li {
+//            a {
+//              color: red;
+//              display: block; /* Превращаем ссылку в блочный элемент */
+//              padding: 10px; /* Добавляем отступы вокруг текста ссылки */
+//              text-decoration: none; /* Убираем подчеркивание у ссылок */
+//            }
+//          }
+//        }
+//      }
+//
+//      &:hover .dropdown_menu {
+//        display: block;
+//      }
+//    }
+//  }
+//}
+//
+//.book {
+//  width: 200px;
+//}
