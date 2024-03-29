@@ -8,6 +8,8 @@ import News from "./pages/News/News";
 import FAQ from "./pages/FAQ/FAQ";
 import Banks from "./pages/Banks/Banks";
 import About from "./pages/About/About";
+import Glossary from "./pages/Glossary/Glossary";
+import Scheme from "./pages/Scheme/Scheme";
 
 function App() {
   return (
@@ -21,7 +23,11 @@ function App() {
 
           <Route path="/faq" element={<FAQ />} />
           <Route path="/banks" element={<Banks />} />
-          <Route path="/about" element={<About />} />
+          {/*<Route path="/about" element={<About />} />*/}
+          <Route path="/glossary" element={<Glossary />} />
+          <Route path="/about" element={<Scheme />} />
+
+
 
         </Routes>
       </Layout>

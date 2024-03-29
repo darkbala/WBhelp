@@ -99,9 +99,16 @@
         .service {
           color: white;
 
-          a:hover {
-            cursor: pointer;
+
+          span{
+            display: flex;
+            align-items: flex-end;
+            gap: 8px;
+            &:hover {
+              cursor: pointer;
+            }
           }
+
         }
       }
 
@@ -115,8 +122,7 @@
   top: 100%;
   left: 13%;
   background-color: #fff;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  list-style-type: none;
+
   padding: 0;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -125,7 +131,7 @@
     background-color: blueviolet;
     width: 300px;
     padding: 10px;
-    height: 400px;
+    height: auto;
     list-style-type: none;
 
     li {
@@ -135,6 +141,55 @@
 
   }
 }
+
+.dropdown_menu1 {
+  position: absolute;
+  top: 100%;
+  left: 42%;
+
+  padding: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  > ol {
+    background-color: blueviolet;
+    width: 300px;
+    padding: 10px;
+    height: auto;
+    list-style-type: none;
+
+    li {
+      padding: 10px;
+    }
+
+
+  }
+}
+
+.dropdown_menu2 {
+  position: absolute;
+  top: 100%;
+  left: 53%;
+
+  padding: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  > ol {
+    background-color: blueviolet;
+    width: 300px;
+    padding: 10px;
+    height: auto;
+    list-style-type: none;
+
+    li {
+      padding: 10px;
+    }
+
+
+  }
+}
+
 
 .show {
   opacity: 1 !important;
