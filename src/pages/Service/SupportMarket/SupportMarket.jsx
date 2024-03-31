@@ -1,7 +1,7 @@
 import React from "react";
 import cl from "./SupportMarket.module.scss";
-// import point from '../../../../public/assets/img/checkmark.png'
-
+import line1 from "../../../assets/img/line1.svg";
+import line from "../../../assets/img/line11.svg";
 import point from "../../../assets/img/check-mark.png";
 
 function SupportMarket() {
@@ -16,11 +16,7 @@ function SupportMarket() {
         <p className={cl.startP}>
           СОПРОВОЖДЕНИЕ <br /> НА МАРКЕТПЛЕЙСАХ
         </p>
-        <img
-          className={cl.startLineImg}
-          src="https://static.tildacdn.com/tild3934-3730-4563-b639-303666343135/line1.svg"
-          alt="line"
-        />
+        <img className={cl.startLineImg} src={line1} alt="line" />
       </div>
       <div className={cl.descrip}>
         <div className={cl.desc1}>
@@ -80,11 +76,7 @@ function SupportMarket() {
           непродуманных действий.
         </p>
 
-        <img
-          className={cl.startLineImg}
-          src="https://static.tildacdn.com/tild6166-3331-4632-b539-326138343462/line3.svg"
-          alt="line"
-        />
+        <img className={cl.startLineImg} src={line} alt="line" />
       </div>
     </div>
   );
