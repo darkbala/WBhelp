@@ -1,31 +1,33 @@
+/* Advertisement.css */
+
 .news-ticker {
   width: 100%;
   overflow: hidden;
+}
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    animation: ticker 10s linear infinite; /* Измените 10s на нужную скорость анимации */
-    white-space: nowrap; /* Чтобы новости не переносились на новую строку */
+.news-ticker ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  animation: ticker 25s linear infinite;
+  /* Измените 10s на нужную скорость анимации */
+  white-space: nowrap;
+}
 
-    li {
-      display: inline;
-      padding-right: 30px; /* Расстояние между новостями */
-    }
-  }
+.news-ticker ul li {
+  display: inline;
+  padding-right: 150px;
+  font-size: 34px;
 }
 
 @keyframes ticker {
   0% {
-    transform: translateX(0);
+    transform: translateX(0%);
   }
+
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-44.5%);
   }
 }
 
-.news-ticker ul li:last-child {
-  margin-right: 100%; /* Добавляем пространство после последней новости, чтобы первая новость сразу же следовала за ней */
-}

@@ -26,9 +26,6 @@ function App() {
           {/*<Route path="/about" element={<About />} />*/}
           <Route path="/glossary" element={<Glossary />} />
           <Route path="/about" element={<Scheme />} />
-
-
-
         </Routes>
       </Layout>
     </div>
