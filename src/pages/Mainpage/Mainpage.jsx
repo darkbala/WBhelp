@@ -20,12 +20,13 @@ function MainPage() {
         <div className={cl["advertisment_cont"]}>
           <Advertisement />
         </div>
-        <div className={cl.circle}>
+        <div className={cl["circle"]}>
           <img
             src="https://static.tildacdn.com/tild3666-6434-4864-b330-613636373433/SALE.svg"
             alt="circle "
             width={280}
             height={280}
+            className={cl.circl}
           />
         </div>
 
